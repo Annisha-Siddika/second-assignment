@@ -88,7 +88,7 @@ header {
 /* banner style end */
 
 .feature-container {
-    margin: 85px 200px 130px;
+    margin: 85px 200px 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 80px;
@@ -147,7 +147,7 @@ margin-bottom: 20px;
 /* second container style */
 
 .second-contianer{
-    padding: 50px 12%;
+    padding: 50px 12% 100px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -204,6 +204,55 @@ margin-bottom: 20px;
 }
 .text-part{
     width:;
+}
+
+/* third section styles */
+
+.third-section{
+    padding: 0px 12% 100px;
+}
+.third-section-title{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.animate-part{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.animate-box{
+    text-align: center;
+    border: 2px solid #ff900e;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 130px;
+    height: 130px;
+    transition: width 1s, height 1s, transform 2s;
+}
+.animate-box h1{
+    font-weight: 600;
+    font-size: 30px;
+    color: #424242;
+}
+.animate-box p{
+    font-weight: 600;
+    font-size: 14px;
+    color: #727272;
+}
+.animate-box:hover{
+    width: 140px;
+    height: 140px;
+    background-color: #ff900e;
+    transition: 2s ease-in-out;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.animate-box:hover h1{
+    color: #FFFFFF;
+}
+.animate-box:hover p{
+    color: #FFFFFF;
 }
 
 
@@ -271,6 +320,14 @@ margin-bottom: 20px;
     }
     #btn-3{
         position: static;
+
+    }
+    .animate-part{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 20px;
+        
+
 
     }
 
